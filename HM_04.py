@@ -12,7 +12,7 @@
 скалолазание, охота
 горные лыжи """
 
-""" with open ('users.txt', encoding='utf8') as u:
+with open ('users.txt', encoding='utf8') as u:
     with open ('hobby.txt', encoding='utf8') as h:
         users = u.readlines()
         hobby = h.readlines()
@@ -24,13 +24,13 @@ users_hobby = dict(zip(users, hobby))
 
 with open ('users_hobby.txt', 'w', encoding='utf8') as data:
     for key, val in users_hobby.items():
-        data.write('{}: {}'.format(key, val)) """
+        data.write('{}: {}'.format(key, val))
         
 
 # Задайте натуральное число N. Напишите программу,
 # которая составит список простых множителей числа N.
 
-""" number = int(input('Введите число: '))
+number = int(input('Введите число: '))
 
 def multic(N):
     my_list = []
@@ -42,13 +42,13 @@ def multic(N):
         else:
             dell += 1
     print(my_list)
-multic(number) """
+multic(number)
 
 
 # Задайте последовательность чисел. Напишите программу,
 # которая выведет список неповторяющихся элементов исходной последовательности.
 
-""" from random import random
+from random import random
 
 my_list = []
 for i in range(10):
@@ -64,13 +64,13 @@ for i in my_list:
             count += 1
     if count == 1:
         my_list_new.append(i)
-print(my_list_new) """
+print(my_list_new)
 
 # Задана натуральная степень k. Сформировать случайным образом список коэффициентов
 # (значения от 0 до 100) многочлена и записать в файл многочлен степени k.
 # Пример: k=2 => 2x² + 4x + 5 = 0 или x² + 5 = 0 или 10x² = 0
 
-""" from random import randint
+from random import randint
 
 k = int(input('Введите натуральную степень числа k: '))
 
@@ -95,7 +95,7 @@ print(result)
 
 with open ('Zadacha4.txt', 'w', encoding='utf8') as data:
     data.write(result)
- """
+
 
 # *Даны два файла, в каждом из которых находится запись многочлена.
 # Задача - сформировать файл, содержащий сумму многочленов.
